@@ -9,9 +9,9 @@ need it) my exact bearing, so that's why I made this. I also made it draw colors
 from your Material You theme so it looks amazing!
 
 ## Screenshots
-![Yellow](screenshots/Screenshot_20220923-232645.png)
-![Blue](screenshots/Screenshot_20220923-232045.png)
-![Orange](screenshots/Screenshot_20220923-223435.png)
+|     |     |     |
+| --- | --- | --- |
+| ![Yellow](screenshots/Screenshot_20220923-232645.png) | ![Blue](screenshots/Screenshot_20220923-232045.png) | ![Orange](screenshots/Screenshot_20220923-223435.png) |
 
 ## Installation
 I'll be putting the app on the Play store shortly. For now, you can clone this
