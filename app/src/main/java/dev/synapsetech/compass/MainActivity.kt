@@ -29,8 +29,7 @@ import kotlinx.coroutines.flow.onEach
 import kotlinx.coroutines.flow.receiveAsFlow
 import kotlinx.coroutines.launch
 
-
-private enum class Cardinal(val letter: String, val degree: Int) {
+enum class Cardinal(val letter: String, val degree: Int) {
     NORTH("N", 0),
     EAST("E", 90),
     SOUTH("S", 180),
