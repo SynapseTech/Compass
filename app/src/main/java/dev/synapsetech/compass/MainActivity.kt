@@ -90,10 +90,10 @@ fun MainPage() {
             )
 
             val arrowPath = Path()
-            arrowPath.moveTo(size.width / 2, size.height)
-            arrowPath.lineTo(size.width / 2 + 45, size.height / 2)
-            arrowPath.lineTo(size.width / 2 - 45, size.height / 2)
-            arrowPath.lineTo(size.width / 2, size.height)
+            arrowPath.moveTo(size.width / 2, (size.height * .9).toFloat())
+            arrowPath.lineTo(size.width / 2 + 30, size.height / 2)
+            arrowPath.lineTo(size.width / 2 - 30, size.height / 2)
+            arrowPath.lineTo(size.width / 2, (size.height * .9).toFloat())
 
             rotate(-currentDegree) {
                 Cardinal.values().forEach {
@@ -131,47 +131,7 @@ fun MainPage() {
 
                 drawPath(arrowPath, SolidColor(arrowNegColor))
                 rotate(180f) {
-                    drawContext.canvas.nativeCanvas.apply {
-                        drawText(
-                            Cardinal.SOUTH.letter,
-                            size.width / 2,
-                            size.height / 2 - 10,
-                            Paint().apply {
-                                textSize = 70f
-                                color = android.graphics.Color.argb(
-                                    bgColor.alpha,
-                                    bgColor.red,
-                                    bgColor.blue,
-                                    bgColor.green
-                                )
-                                textAlign = Paint.Align.CENTER
-                            }
-                        )
-                    }
-                }
-
-                rotate(180f) {
                     drawPath(arrowPath, SolidColor(arrowPosColor))
-
-                    rotate(180f) {
-                        drawContext.canvas.nativeCanvas.apply {
-                            drawText(
-                                Cardinal.NORTH.letter,
-                                size.width / 2,
-                                size.height / 2 - 10,
-                                Paint().apply {
-                                    textSize = 70f
-                                    color = android.graphics.Color.argb(
-                                        bgColor.alpha,
-                                        bgColor.red,
-                                        bgColor.blue,
-                                        bgColor.green
-                                    )
-                                    textAlign = Paint.Align.CENTER
-                                }
-                            )
-                        }
-                    }
                 }
             }
 
